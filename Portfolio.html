@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  
+   *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+   }
+   body{
+   height: 100vh;
+   padding: 50px 5%;
+   background-color: rgba(133, 9, 216, 0.836);
+   }
+  .container{
+   height: 100%; 
+   position: relative;
+   background-color:rgba(133, 9, 216, 0.836) ;
+   border-radius: 30px;
+   }
+   header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+   }
+   .logo{
+    font-size: 32px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+   }
+   nav a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    padding: 20px;
+    border-bottom: 2px solid transparent;
+   }
+   nav a:hover,
+   nav a.active {
+    border-color: #fff;
+   }
+   .home{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 40px;
+    padding: 50px 5% 0;
+    color: #fff;
+   }
+   span{
+    color: #42c1e8;
+   }
+   .home-detail h1{
+    font-size: 32px;
+   }
+   .home-detail h2{
+    font-size: 26px;
+   }
+   .home-detail p{
+    margin: 10px;
+   }
+   .home-detail .download-social{
+    display: flex;
+    align-items: center;
+   }
+   .btn{
+    display: inline-block;
+    padding: 10px 30px;
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #fff;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .5s;
+   }
+   .btn:hover{
+    background: transparent;
+    box-shadow: none;
+    color: #fff;
+   }
+  .home-detail .social-icons{
+    margin-left: 20px;
+  }
+  .home-detail .social-icons a{
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 8px;
+    transition: .5s;
+  }
+  .home-detail .social-icons a:hover{
+    background: #fff;
+    box-shadow: 0 0 10px #fff;
+    color: #333;
+    transform: rotate(360deg);
+  }
+  .home-img .img-box{
+    position: relative;
+    width: 63vh;
+    height: 44vh;
+    border: 2px solid rgba(133, 9, 216, 0.836);
+    border-radius:50px ;
+  }
+   </style>
+</head>
+<body>
+  <div class="container">
+       <header>
+        <a href="" class="logo">Portfolio</a>
+        <nav class="nacbar">
+          <a href="" class="active">Home</a>
+          <a href="">About</a>
+          <a href="">Portfolio</a>
+          <a href="">Service</a>
+          <a href="">Contact</a>
+        </nav>
+       </header>
+       <section class="home">
+              <div class="home-detail">
+                   <h1>Ali <span>Gabeire</span></h1>
+                   <h2> Engineer</h2>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor <br>incididunt ut labore et dolore magna aliqua.</p>
+              
+              <div class="download-social">
+                   <a href="#" class="btn"> Download</a>
+                   <div class="social-icons">
+                   <a href="#"><i class="ri-github-fill"></i></a>
+                   <a href="#"><i class="ri-youtube-fill"></i></a>
+                   <a href="#"><i class="ri-twitter-x-line"></i></a>
+                   <a href="#"><i class="ri-instagram-line"></i></a>
+                  </div>
+                  </div>
+              </div>
+              <div class="home-img">
+              <div class="img-box">
+                   <img src="btc-look-like.png.webp" width="300px" style="border-radius: 50px;">
+              </div>
+            
+            </div>
+       </section>
+  </div>
+</body>
+</html>
